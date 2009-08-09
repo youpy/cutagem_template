@@ -4,3 +4,7 @@ require "<%=gempath%>"
 
 module SpecHelper
 end
+
+Spec::Runner.configure do |config|
+  config.include SpecHelper
+end
